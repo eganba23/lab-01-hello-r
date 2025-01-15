@@ -30,7 +30,7 @@ First, let's plot the data in the dino dataset:
 ```{r plot-dino, fig.height=3, fig.width=6}
 dino_data <- datasaurus_dozen %>%
   filter(dataset == "dino")
-
+#ddddSs
 ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
