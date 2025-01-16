@@ -25,7 +25,7 @@ library(datasauRus)
 
 ### Exercise 2
 
-Code to plot the data in the dino dataset:
+Code to create graph:
 
 ```{r plot-dino, fig.height=3, fig.width=6}
 dino_data <- datasaurus_dozen %>%
