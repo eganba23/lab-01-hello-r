@@ -82,14 +82,22 @@ Observations:
 
 ### Exercise 4
 
-Add your code and narrative to complete this exercise. Use the conventions from the previous exercises to name your chunks and organize your work.
 
-```{r}
+Code for circle data
 
+```{r plot-circle, fig.height=3, fig.width=6}
+circle_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
+ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
+  geom_point()
 ```
 
-```{r}
+Note there's a couple random plot points that are off
 
+
+```{r cor-circle}
+circle_data %>%
+  summarize(r = cor(x, y))
 ```
 
 ### Exercise 5
