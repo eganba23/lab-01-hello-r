@@ -25,7 +25,7 @@ library(datasauRus)
 
 ### Exercise 2
 
-Code to create graph:
+Code to create:
 
 ```{r plot-dino, fig.height=3, fig.width=6}
 dino_data <- datasaurus_dozen %>%
@@ -56,24 +56,28 @@ This is your turn to write the code and narrative for the star dataset. Follow t
 Note that the R chunks are labeled with `plot-star` and `cor-star` to provide spaces to place the code for plotting and calculating the correlation coefficient.
 To finish, clean up the narrative by removing these instructions.
 
+Graph of star data
+
 ```{r plot-star, fig.height=3, fig.width=6}
-star_data <- 
-  
-  
-  dino_data <- datasaurus_dozen %>%
-  filter(dataset == "dino")
-ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
+star_data <- datasaurus_dozen %>%
+  filter(dataset == "star")
+ggplot(data = star_data, mapping = aes(x = x, y = y)) +
   geom_point()
   
   
 ```
 
-I'm some filler text, you should replace me with more meaningful text...
+correlation for star data
 
 ```{r cor-star}
 
+star_data %>%
+  summarize(r = cor(x, y))
+
 ```
-Add your explanation here—what did you notice?
+
+Observations:
+  | star had lots of datapoints around the points but not on the straight parts of the stars
 
 
 ### Exercise 4
