@@ -19,7 +19,9 @@ library(datasauRus)
 
 ### Exercise 1
 
-Not sure what exercise 1 was supposed to be. Might have missed it...
+1846 rows
+ 2 columns (assume x and y)
+ variables are: away, bullseye, circle, dino, dots, h_lines, high_lines, slant_down, slant_up, star, v_lines, wide_lines, x_shape
 
 ### Exercise 2
 
@@ -40,10 +42,10 @@ dino_data %>%
 ```
 
 Observations:
-  -Data pulled from dinosaur dataset
-  -ggplot function is being used to graph each datapoint from datasaurus_dozen/dino_data
-  -data must be have x and y
-  -almost 0 coorelation, makes sense
+  | Data pulled from dinosaur dataset
+  | ggplot function is being used to graph each datapoint from datasaurus_dozen/dino_data
+  | data must be have x and y
+  | almost 0 coorelation, makes sense
   
 
 
@@ -54,8 +56,16 @@ This is your turn to write the code and narrative for the star dataset. Follow t
 Note that the R chunks are labeled with `plot-star` and `cor-star` to provide spaces to place the code for plotting and calculating the correlation coefficient.
 To finish, clean up the narrative by removing these instructions.
 
-```{r plot-star}
-
+```{r plot-star, fig.height=3, fig.width=6}
+star_data <- 
+  
+  
+  dino_data <- datasaurus_dozen %>%
+  filter(dataset == "dino")
+ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
+  geom_point()
+  
+  
 ```
 
 I'm some filler text, you should replace me with more meaningful text...
