@@ -4,8 +4,9 @@ author: "Benjamin Egan"
 date: "1/16/25"
 output: 
   html_document: 
-    fig_height: 4
-    fig_width: 9
+    fig_height: 12
+    fig_width: 15
+    theme: yeti
 ---
 
 ## Load packages and data
