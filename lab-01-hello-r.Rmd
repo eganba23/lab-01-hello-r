@@ -117,7 +117,6 @@ Correlations for all datasets - not currently doing what it's supposed to do
 ``` {r cor-all}
 datasaurus_dozen %>%
   group_by(dataset) %>%
-  summarize(r = cor(x, y)) %>%
-  print(13)
+  summarize(r = cor(x, y))
 ```
 
