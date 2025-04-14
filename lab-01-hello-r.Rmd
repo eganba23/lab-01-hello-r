@@ -9,6 +9,11 @@ output:
     theme: yeti
 ---
 
+Assignment link: https://datascience4psych.github.io/DataScience4Psych/lab01execercise.html
+
+Archived linked: https://web.archive.org/web/20250304114655/https://datascience4psych.github.io/DataScience4Psych/lab01execercise.html
+
+
 ## Load packages and data
 
 ```{r load-packages, message=FALSE}
